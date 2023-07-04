@@ -6,7 +6,7 @@ node1 = node(10)
 print(node)
 
 
-create class for linking
+#create class for linking
 
 class linkedlist:
     def __init__(self):
