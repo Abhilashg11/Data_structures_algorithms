@@ -13,4 +13,9 @@ class linkedlist:
         self.head = None 
     def print_ll(self):
         if self.head is None:
-            print("linked list is empty")            
+            print("linked list is empty")
+        else:
+            n= self.head
+           
+
+    
