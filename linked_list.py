@@ -21,6 +21,6 @@ class linkedlist:
                 n = n.ref
 
 ll1 = linkedlist()
-
+ll1.print_ll()
 
     
