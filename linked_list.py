@@ -4,7 +4,7 @@ class node:
         self.ref = None
 node1 = node(10)
 print(node)
-print("yes")
+
 
 #create class for linking
 
@@ -16,6 +16,11 @@ class linkedlist:
             print("linked list is empty")
         else:
             n= self.head
-           
+            while n == None:
+                print(n.data)
+                n = n.ref
+
+ll1 = linkedlist()
+# ll1.print_ll()
 
     
