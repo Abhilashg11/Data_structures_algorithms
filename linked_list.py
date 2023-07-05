@@ -1,42 +1,39 @@
 class node:
-    def __init__(self,data=None):
-        self.data  = data
-        self.ref = None
-# node1 = node(10)
-# print(node1)
+	def __init__(self,data=None):
+		self.data=data
+		self.next=None
 
+class linked_list:
+	def __init__(self):
+		self.head=node()
 
-#create class for linking
+	# Adds new node containing 'data' to the end of the linked list.
+	def append(self,data):
+		new_node=node(data)
+		cur=self.head
+		while cur.next!=None:
+			cur=cur.next
+		cur.next=new_node
 
-class linkedlist:
-    def __init__(self):
-        self.head = node()
-# adding node
-    def append(self,data):
-        new_node = node(data) 
-        cur = self.head    
-        while cur.ref != None:
-           cur = cur.ref
-        cur.ref = new_node
+	# Returns the length (integer) of the linked list.
+	def length(self):
+		cur=self.head
+		total=0
+		while cur.next!=None:
+			total+=1
+			cur=cur.next
+		return total 
 
-# finding length
-    def length(self):
-        cur = self.head
-        total = 0 
-        while cur.ref!= None:
-            total+=1
-            cur = cur.ref
-        return total    
+	# Prints out the linked list in traditional Python list format. 
+	def display(self):
+		elems=[]
+		cur_node=self.head
+		while cur_node.next!=None:
+			cur_node=cur_node.next
+			elems.append(cur_node.data)
+		print(elems) 
 
-    def display(self):
-        elems = []
-        cur_node = self.head
-        while  cur_node !=None:
-            cur_node = cur_node.ref
-            elems.append(cur_node.data)
-        print(elems)    
-
-my_list = linkedlist()
+my_list = linked_list()
 
 my_list.display
 
