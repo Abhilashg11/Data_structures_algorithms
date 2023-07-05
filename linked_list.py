@@ -30,12 +30,20 @@ class linkedlist:
 
     def display(self):
         elems = []
-        cur_node - self.head
+        cur_node = self.head
         while  cur_node !=None:
             cur_node = cur_node.ref
             elems.append(cur_node.data)
         print(elems)    
 
+my_list = linkedlist()
+
+my_list.display
+
+my_list.append(1)
+my_list.append(2)
+
+my_list.display()
 
 
 
