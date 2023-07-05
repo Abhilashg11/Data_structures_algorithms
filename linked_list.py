@@ -1,26 +1,28 @@
 class node:
-    def __init__(self,data):
+    def __init__(self,data=None):
         self.data  = data
         self.ref = None
-node1 = node(10)
-print(node)
+# node1 = node(10)
+# print(node1)
 
 
-create class for linking
+#create class for linking
 
 class linkedlist:
     def __init__(self):
-        self.head = None 
-    def print_ll(self):
-        if self.head is None:
-            print("linked list is empty")
-        else:
-            n= self.head
-            while n == None:
-                print(n.data)
-                n = n.ref
+        self.head = node()
 
-ll1 = linkedlist()
-ll1.print_ll()
+    def append(self,data):
+        new_node = node(data) 
+        cur = self.head    
+        while cur.ref != None:
+           cur = cur.ref
+        cur.ref = new_node
+        
+    def length(self):
+        cur = self.head
+        total = 0 
+
+
 
     
