@@ -58,6 +58,9 @@ class linked_list:
     def append(self,data):
 	    new_node = node1(data)
 	    cur = self.head
+	    while cur.next!=None:
+		    cur = cur.next
+		    
 	    
 	        
 	    
