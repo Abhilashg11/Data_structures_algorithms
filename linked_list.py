@@ -8,7 +8,6 @@ print(n1.data)
 class linked_list:
 	def __init__(self):
 		self.head=node()
-		self.wei=no
 
 	# Adds new node containing 'data' to the end of the linked list.
 	def append(self,data):
@@ -36,28 +35,31 @@ class linked_list:
 			elems.append(cur_node.data)
 		print(elems) 
 
-my_list = linked_list()
+# my_list = linked_list()
 
-my_list.display
+# my_list.display
 
-my_list.append(1)
-my_list.append(2)
+# my_list.append(1)
+# my_list.append(2)
 
-my_list.display()
+# my_list.display()
 
 
 
-# class node1:
-# 	def __init__(self,data):
-# 		self.data = data
-# 		self.ref = None
-
-# class linked_list:
+class node1:
+	def __init__(self,data):
+		self.data = data
+		self.next = None
+class linked_list:
 	
-#     def __init__(self):
-# 	    self.head=node1()
+    def __init__(self):
+	    self.head=node1()
 
-#     def app    
+    def append(self,data):
+	    new_node = node1(data)
+	    cur = self.head
+	    
+	        
 	    
 	    
 	    
