@@ -2,10 +2,13 @@ class node:
 	def __init__(self,data=None):
 		self.data=data
 		self.next=None
+n1 = node()
+print(n1.data)
 
 class linked_list:
 	def __init__(self):
 		self.head=node()
+		self.wei=no
 
 	# Adds new node containing 'data' to the end of the linked list.
 	def append(self,data):
