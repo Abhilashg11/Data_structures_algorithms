@@ -24,7 +24,7 @@ class LinkedList:
 ll1 = LinkedList()
 ll1.add(10)
 ll1.print_LL()
-print("hfdv")
+print("hgk")
 
 
 # class node1:
