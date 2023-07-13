@@ -34,7 +34,7 @@ class LinkedList:
                 n = n.ref
             n.ref = new_node
 
- #Adding in the middle
+ #Adding in the middle(after)
     def add_after(self,data,x):
         n = self.head
         while n is not None:
@@ -42,20 +42,28 @@ class LinkedList:
             if x == n.data:
                 new_node = Node(data)
                 new_node.ref = n.ref
-                n.ref = new_node
-                
-               
-                 
-            n = n.ref        
-               
+                n.ref = new_node             
+            n = n.ref 
+
+# #adding in the middle(before)
+#     def add_before(self,data,x):
+#         n = self.head
+#         new_node = Node(data)
+#         while n is not None:
+#             if x == n.data:
+#                 new_node.ref = self.head
+
+                                
             
 
 ll1 = LinkedList()
 ll1.add_beg(100)
 ll1.add_end(79)
 ll1.add_end(10)
+ll1.add_end(24)
+ll1.add_beg(69)
 # ll1.add_beg(39)
-ll1.add_after(1623,10)
+ll1.add_after(1623,69)
 ll1.print_LL()
 
 
