@@ -13,17 +13,36 @@ class LinkedList:
         else:
             n = self.head
             while n is not None:
-                print(n.data)
+                print(n.data,"--->",end=" ")
                 n = n.ref
-    def add(self,data):
+
+#Adding at the beggining
+    def add_beg(self,data):
         new_node = Node(data)
         new_node.ref = self.head
-#         self.head = new_node
+        self.head = new_node
+
+#Adding at the end
+    def add_end(self,data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node 
+        else:
+            n = self.head
+            while n.ref is not None:
+                n = n.ref
+            n.ref = new_node
+            
 
 
-# ll1 = LinkedList()
-# ll1.add(10)
-# ll1.print_LL()
+
+
+
+ll1 = LinkedList()
+ll1.add_beg(100)
+ll1.add_end(10)
+ll1.add_beg(39)
+ll1.print_LL()
 
 
 # # class node1:
@@ -41,10 +60,7 @@ class LinkedList:
 # # 	    while cur.next!=None:
 # # 		    cur = cur.next
 		    
-a=2
-b=3	    
-	        
-f{"sdgdsg",a-b}	    
+   
 	    
 	    
 	        		
