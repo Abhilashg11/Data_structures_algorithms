@@ -63,7 +63,7 @@ ll1.add_end(10)
 ll1.add_end(24)
 ll1.add_beg(69)
 ll1.add_beg(78)
-# ll1.add_beg(39)
+ll1.add_beg(39)
 ll1.add_after(1623,69)
 ll1.print_LL()
 
