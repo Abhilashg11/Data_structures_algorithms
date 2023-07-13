@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.ref = None
 
+
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -39,25 +40,15 @@ class LinkedList:
         while n is not None:
             print("ds")
             if x == n.data:
-                print("sbbs")
                 new_node = Node(data)
-                print("jdbh")
                 new_node.ref = n.ref
                 n.ref = new_node
-                print("dfv")
-                # new_node.ref = self.head
+                
+               
                  
             n = n.ref        
                
             
-     
-
-
-
-
-
-
-
 
 ll1 = LinkedList()
 ll1.add_beg(100)
@@ -69,21 +60,9 @@ ll1.print_LL()
 
 
 
-# # class node1:
-# # 	def __init__(self,data):
-# # 		self.data = data
-# # 		self.next = None
-# # class linked_list:
-	
-# #     def __init__(self):
-# # 	    self.head=node1()
+    
 
-# #     def append(self,data):
-# # 	    new_node = node1(data)
-# # 	    cur = self.head
-# # 	    while cur.next!=None:
-# # 		    cur = cur.next
-		    
+
    
 	    
 	    
