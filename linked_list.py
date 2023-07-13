@@ -43,6 +43,7 @@ ll1.add_beg(100)
 ll1.add_end(10)
 ll1.add_beg(39)
 ll1.print_LL()
+print("hk")
 
 
 # # class node1:
