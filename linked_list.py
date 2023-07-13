@@ -32,7 +32,20 @@ class LinkedList:
             while n.ref is not None:
                 n = n.ref
             n.ref = new_node
-            
+
+ #Adding in the middle
+    def add_mid(self,data):
+        i = input(print("After node or before node"))
+        if i == "A":
+            new_node = Node(data)
+            new_node.ref = self.head
+            self.head = new_node
+        else:
+            new_node = Node(data)
+            new_node.ref = self.head
+
+
+
 
 
 
@@ -42,8 +55,9 @@ ll1 = LinkedList()
 ll1.add_beg(100)
 ll1.add_end(10)
 ll1.add_beg(39)
+ll1.add_mid(1623)
 ll1.print_LL()
-print("hk")
+
 
 
 # # class node1:
