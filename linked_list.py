@@ -36,12 +36,17 @@ class LinkedList:
  #Adding in the middle
     def add_after(self,data,x):
         n = self.head
-        while n == None:
+        while n is not None:
             if  x == n.data:
-                # new_node = Node(data)
-                n = n.ref
+                new_node = Node(data)
+                
+                new_node.ref = n.ref
+                n.ref = new_node
+                # print("dfv")
                 # new_node.ref = self.head
-                if 
+            else:
+                break    
+            break        
                
             
      
@@ -55,9 +60,10 @@ class LinkedList:
 
 ll1 = LinkedList()
 ll1.add_beg(100)
+ll1.add_end(79)
 ll1.add_end(10)
 # ll1.add_beg(39)
-ll1.add_after(1623,100)
+ll1.add_after(1623,79)
 ll1.print_LL()
 
 
