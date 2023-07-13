@@ -34,15 +34,17 @@ class LinkedList:
             n.ref = new_node
 
  #Adding in the middle
-    def add_mid(self,data):
-        i = input(print("After node or before node"))
-        if i == "A":
-            new_node = Node(data)
-            new_node.ref = self.head
-            self.head = new_node
-        else:
-            new_node = Node(data)
-            new_node.ref = self.head
+    def add_after(self,data,x):
+        n = self.head
+        while n == None:
+            if  x == n.data:
+                # new_node = Node(data)
+                n = n.ref
+                # new_node.ref = self.head
+                if 
+               
+            
+     
 
 
 
@@ -54,8 +56,8 @@ class LinkedList:
 ll1 = LinkedList()
 ll1.add_beg(100)
 ll1.add_end(10)
-ll1.add_beg(39)
-ll1.add_mid(1623)
+# ll1.add_beg(39)
+ll1.add_after(1623,100)
 ll1.print_LL()
 
 
