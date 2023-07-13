@@ -37,16 +37,17 @@ class LinkedList:
     def add_after(self,data,x):
         n = self.head
         while n is not None:
-            if  x == n.data:
+            print("ds")
+            if x == n.data:
+                print("sbbs")
                 new_node = Node(data)
-                
+                print("jdbh")
                 new_node.ref = n.ref
                 n.ref = new_node
-                # print("dfv")
+                print("dfv")
                 # new_node.ref = self.head
-            else:
-                break    
-            break        
+                 
+            n = n.ref        
                
             
      
@@ -63,7 +64,7 @@ ll1.add_beg(100)
 ll1.add_end(79)
 ll1.add_end(10)
 # ll1.add_beg(39)
-ll1.add_after(1623,79)
+ll1.add_after(1623,10)
 ll1.print_LL()
 
 
