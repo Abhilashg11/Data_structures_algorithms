@@ -72,7 +72,7 @@
 import array as ar
 a = ar.array("i",[1,2,3,4,5])
 a.insert(2,14)
-a.pop(2)
+a.remove(14)
 print(a)
 
 
