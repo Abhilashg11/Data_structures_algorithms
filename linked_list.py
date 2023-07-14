@@ -71,9 +71,12 @@
 
 import array as ar
 a = ar.array("i",[1,2,3,4,5])
-a.insert(2,14)
-a.remove(14)
-print(a)
+b = ar.array("i",[0,9,8,7])
+c= a+b
+d = ar.array("i")
+# a.insert(2,14)
+# a.remove(14)
+print(d)
 
 
 
