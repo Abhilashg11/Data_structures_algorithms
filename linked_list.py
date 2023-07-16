@@ -77,6 +77,8 @@ d = ar.array("i",[1,2,3,4])
 a.insert(2,14)
 a.remove(14)
 print(d)
+e = ar.array("i",[2,3,4,4])
+print(e[2])
 
 
 
