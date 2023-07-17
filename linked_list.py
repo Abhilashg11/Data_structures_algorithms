@@ -70,15 +70,22 @@
 
 
 import array as ar
-a = ar.array("i",[1,2,3,4,5])
-b = ar.array("i",[0,9,8,7])
-c= a+b
-d = ar.array("i",[1,2,3,4])
-a.insert(2,14)
-a.remove(14)
-print(d)
-e = ar.array("i",[2,3,4,4])
-e.insert(2,5)
+# a = ar.array("i",[1,2,3,4,5])
+# b = ar.array("i",[0,9,8,7])
+# c= a+b
+# d = ar.array("i",[1,2,3,4])
+# a.insert(2,14)
+# a.remove(14)
+# print(d)
+# e = ar.array("i",[2,3,4,4])
+# e.insert(2,5)
+
+row,col = (5,5)
+a = [[0]*row,[0]*col] 
+a[0][1]=5
+print(a)
+
+
 
 
 
