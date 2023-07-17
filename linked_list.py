@@ -82,8 +82,10 @@ import array as ar
 
 row,col = (5,5)
 a = [[0]*row,[0]*col] 
-a[0][1]=5
-print(a)
+for i in a:
+    for j in i:
+        print(j)
+
 
 
 
