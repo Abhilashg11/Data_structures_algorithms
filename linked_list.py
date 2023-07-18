@@ -95,19 +95,24 @@
 #     n2 = n3
 #     print(n3, end=" ")
 #recursion
-def fibonacci(n):
-    if n <= 1:
-        return n
-    return fibonacci(n-1) + fibonacci(n-2)
+# def fibonacci(n):
+#     if n <= 1:
+#         return n
+#     return fibonacci(n-1) + fibonacci(n-2)
  
  
-if __name__ == "__main__":
-    n = 10
-    print(n, "th Fibonacci Number: ")
-    print(fibonacci(n))
+# if __name__ == "__main__":
+#     n = -5
+#     print(n, "th Fibonacci Number: ")
+#     print(fibonacci(n))
  
+class Solution:
+    def twoSum(self, nums: List[int], target: int):
+        for i in self.nums:
+            i+self.nums[i+1]
 
 
+twosum([2,3,4],9)
 
 
 
