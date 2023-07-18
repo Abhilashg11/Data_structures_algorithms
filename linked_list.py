@@ -69,7 +69,7 @@
 
 
 
-import array as ar
+# import array as ar
 # a = ar.array("i",[1,2,3,4,5])
 # b = ar.array("i",[0,9,8,7])
 # c= a+b
@@ -80,11 +80,37 @@ import array as ar
 # e = ar.array("i",[2,3,4,4])
 # e.insert(2,5)
 
-row,col = (5,5)
-a = [[0]*row,[0]*col] 
-for i in a:
-    for j in i:
-        print(j)
+# row,col = (5,5)
+# a = [[0]*row,[0]*col] 
+# for i in a:
+#     for j in i:
+#         print(j)
+
+# num = 10
+# n1, n2 = 0, 1
+# print("Fibonacci Series:", n1, n2, end=" ")
+# for i in range(num):
+#     n3 = n1 + n2
+#     n1 = n2
+#     n2 = n3
+#     print(n3, end=" ")
+#recursion
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+ 
+ 
+if __name__ == "__main__":
+    n = 10
+    print(n, "th Fibonacci Number: ")
+    print(fibonacci(n))
+ 
+
+
+
+
+
 
 
 
