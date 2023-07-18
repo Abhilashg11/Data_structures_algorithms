@@ -106,14 +106,28 @@
 #     print(n, "th Fibonacci Number: ")
 #     print(fibonacci(n))
  
-class Solution:
-    def twoSum(self, nums: List[int], target: int):
-        for i in self.nums:
-            i+self.nums[i+1]
+# class Solution:
+#     def twoSum(self, nums: List[int], target: int):
+#         for i in self.nums:
+#             i+self.nums[i+1]
 
 
-twosum([2,3,4],9)
+# twosum([2,3,4],9)
 
+
+# def a(self,b: List[int]):
+l1 = ["eat", "sleep", "repeat"]
+s1 = "geek"
+  
+# creating enumerate objects
+obj1 = enumerate(l1)
+obj2 = enumerate(s1)
+  
+print ("Return type:", type(obj1))
+print ([enumerate(l1)])
+  
+# changing start index to 2 from 0
+print (list(enumerate(s1)))
 
 
 
